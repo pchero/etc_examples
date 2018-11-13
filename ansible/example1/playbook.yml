@@ -1,0 +1,9 @@
+---
+- name: Network Getting Started First Playbook
+  connection: nework_cli
+  hosts: all
+  tasks:
+
+    - name: Get config for VyOS devices
+      vyos_facts:
+      
