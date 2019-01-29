@@ -1,0 +1,7 @@
+---
+
+- hosts: test
+  become: true
+  roles:
+    - work
+

@@ -1,0 +1,25 @@
+---
+
+- name: Copy the file
+  copy:
+    src: test.log
+    dest: /tmp
+    owner: root
+    group: root
+    mode: 644
+
+- name: Copy the directory
+  copy:
+    src: test_dir
+    dest: /tmp
+    owner: root
+    group: root
+    mode: 644
+
+- name: Copy the directory
+  copy:
+    src: test_dir
+    dest: /tmp/changed_dir_name
+    owner: root
+    group: root
+    mode: 755
