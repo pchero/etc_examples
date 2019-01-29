@@ -1,0 +1,12 @@
+---
+
+- name: Download mb asterisk modules
+  git:
+    repo: https://github.com/pchero/c_examples
+    dest: /usr/local/src/test_dir
+
+- name: Build Asterisk module. mb_rtcphandler
+  command: "{{ item }} chdir=/usr/local/src/test_dir/glibc/string/hex_print"
+  with_items:
+    - gcc -o main main.c
+
